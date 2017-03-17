@@ -1,0 +1,17 @@
+Modeling
+
+User Model
+-avatar
+-firstname
+-lastname
+-phone
+-country
+-state
+-city
+-zipcode
+-address1
+-address2
+
+
+-/Devise
+
