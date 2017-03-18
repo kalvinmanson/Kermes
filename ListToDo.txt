@@ -1,9 +1,11 @@
 Modeling
 
 User Model
--avatar
--firstname
--lastname
+-role
+-name
+-username
+-birthdate
+-gender
 -phone
 -country
 -state
@@ -11,7 +13,63 @@ User Model
 -zipcode
 -address1
 -address2
+-rank
+
+rails g scaffold User role:string name:string username:string birthdate:date gender:string phone:string country:string state:string city:string zipcode:string address1:string address2:string rank:float purchases:integer sales:integer
 
 
--/Devise
+Products Model
+-user_id
+-name
+-content
+-quantity
+-price
+-shipping
+-shipping_price
+-cash:boolean
 
+rails g scaffold Product user:references name:string content:text quantity:integer price:float shipping:boolean shipping_price:float cash:boolean
+
+Paymment Model
+-user_id
+-product_id
+-ammount
+-shipping
+-taxes
+-fee
+-cash:boolean
+-status
+
+rails g scaffold Paymment user:references product:references ammount:float shipping:float taxes:float fee:float cash:boolean status:string
+
+-Qualifications
+-user_id
+-post_id
+-content
+-rank
+
+rails g scaffold Qualification user:references product:references content:text rank:integer
+
+GEMS
+devise
+geocoder
+friendly_id
+paranoid
+socialization
+mailboxer
+cancancan
+paperclip
+i18n
+
+** pendiente **
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
+
+
+
+flujo de trabajo
+-Layaout *
+-relationships **
+-add product * 
+-paperclip
+-user profile

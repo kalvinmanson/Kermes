@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @paymment.user %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @paymment.product %>
+</p>
+
+<p>
+  <strong>Ammount:</strong>
+  <%= @paymment.ammount %>
+</p>
+
+<p>
+  <strong>Shipping:</strong>
+  <%= @paymment.shipping %>
+</p>
+
+<p>
+  <strong>Taxes:</strong>
+  <%= @paymment.taxes %>
+</p>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @paymment.fee %>
+</p>
+
+<p>
+  <strong>Cash:</strong>
+  <%= @paymment.cash %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @paymment.status %>
+</p>
+
+<%= link_to 'Edit', edit_paymment_path(@paymment) %> |
+<%= link_to 'Back', paymments_path %>
