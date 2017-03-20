@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 #Mis Gemas
 gem 'devise'
 gem 'paperclip', '~> 5.0.0'
+gem 'geocoder'
 
 #Mis Gemas Layout
 gem 'bootstrap-sass', '~> 3.3.6'
