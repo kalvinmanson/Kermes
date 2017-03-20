@@ -1,0 +1,9 @@
+I, [2017-03-20T22:54:19.990972 #15240]  INFO -- : Refreshing Gem list
+I, [2017-03-20T22:54:24.504499 #15240]  INFO -- : listening on addr=/home/kalvin/Kermes/shared/sockets/unicorn.sock fd=8
+I, [2017-03-20T22:54:24.504894 #15240]  INFO -- : worker=0 spawning...
+I, [2017-03-20T22:54:24.507654 #15240]  INFO -- : worker=1 spawning...
+I, [2017-03-20T22:54:24.508966 #15243]  INFO -- : worker=0 spawned pid=15243
+I, [2017-03-20T22:54:24.509172 #15243]  INFO -- : worker=0 ready
+I, [2017-03-20T22:54:24.512305 #15240]  INFO -- : master process ready
+I, [2017-03-20T22:54:24.521573 #15246]  INFO -- : worker=1 spawned pid=15246
+I, [2017-03-20T22:54:24.521759 #15246]  INFO -- : worker=1 ready

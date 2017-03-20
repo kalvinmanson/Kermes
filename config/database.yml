@@ -13,9 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
+  host: localhost
   username: kermes
-  password: kermes01
-  socket: /tmp/mysql.sock
+  password: <%= ENV['KERMES_DATABASE_PASSWORD'] %>
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -50,5 +51,5 @@ test:
 production:
   <<: *default
   database: Kermes_production
-  username: Kermes
+  username: kermes
   password: <%= ENV['KERMES_DATABASE_PASSWORD'] %>
