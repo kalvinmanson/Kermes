@@ -40,6 +40,7 @@ gem 'devise'
 gem 'paperclip', '~> 5.0.0'
 gem 'geocoder'
 gem 'unicorn'
+gem 'cancancan'
 
 #Mis Gemas Layout
 gem 'bootstrap-sass', '~> 3.3.6'
